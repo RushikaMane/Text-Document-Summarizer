@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Document Summarizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" onchange="toggleMode()" />
+          <span class="slider round"></span>
+        </label>
+        <span id="modeLabel">🌞 Light Mode</span>
+      </div>
+      <img src="https://img.icons8.com/color/96/brain.png" alt="Logo" class="logo" />
+      <h1>🧠 Document Summarizer</h1>
+      <p>Summarize any notes or documents using NLP!</p>
+    </header>
+    <main>
+      <textarea id="inputText" placeholder="Paste your text, notes or document here..."></textarea>
+      <div class="file-upload">
+        <label for="fileInput">📂 Or Upload a File (PDF, DOCX, TXT):</label>
+        <input type="file" id="fileInput" accept=".pdf,.docx,.txt" />
+        <button onclick="uploadFile()">Upload & Summarize</button>
+      </div>
+      
+      <button onclick="summarize()">Summarize Now</button>
+      <section id="summarySection">
+        <h2>📋 Summary Output</h2>
+        <div id="summaryOutput">Your summary will appear here...</div>
+      </section>
+    </main>
+    <footer>
+      <p>Built with ❤️ using Node.js & NLP</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
