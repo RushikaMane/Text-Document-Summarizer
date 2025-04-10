@@ -59,8 +59,6 @@ Add support for more languages
 Provide summary length customization
 Deploy on platforms like Vercel or Heroku
 
-👨‍💻 Author
-Rushika Mane
 
 
 
